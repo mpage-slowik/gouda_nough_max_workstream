@@ -1,0 +1,11 @@
+# To develop on your branch
+# [while working on your own development branch]
+git checkout master 
+# you are now in master branch
+git merge [your branch]
+# branch is now up to date with your development branch
+# send Jesse a pull request for him to merge your code.
+#To update your repo after a pull request:
+git add remote upstream [link to main repo master]
+git fetch upstream
+git rebase upstream/master

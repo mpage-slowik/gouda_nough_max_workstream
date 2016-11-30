@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center">
+    <TextView
+        android:text="@string/bill"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:gravity="center|end"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:inputType="numberDecimal"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:id="@+id/bill"
+        android:gravity="center|start"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio_group_tip"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+       >
+    <RadioButton
+        android:text="@string/ten_perc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ten_p"
+        />
+
+    <RadioButton
+        android:text="@string/fifteen_perc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fifteen_p" />
+
+    <RadioButton
+        android:text="@string/twenty_perc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/twenty_p" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="@string/people"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center|end"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:text="@string/default_num_of_people"
+            android:layout_height="wrap_content"
+            android:id="@+id/num_of_people"
+            android:gravity="center|start"/>
+    </LinearLayout>
+    <Button
+        android:layout_gravity="center"
+        android:text="@string/calc_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tip_calc_button"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:text="@string/tip"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center|end"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:id="@+id/tip"
+            android:gravity="center|start"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <TextView
+            android:text="@string/total"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center|end"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:id="@+id/total"
+            android:gravity="center|start"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
